@@ -1,7 +1,9 @@
-import { Button, Container, ThemeProvider } from '@mui/material';
+import {  Container, ThemeProvider } from '@mui/material';
 import { grey } from '@mui/material/colors';
 import theme from './styles/theme';
 import AppBar from './components/appBar'
+import Banner from './components/banner';
+import Promotion from './components/promotion';
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
       backgroundColor:grey
      }}
     >
-      {/* <Button variant='contained'>CLick me</Button> */}
+      
       <AppBar />
+      <Banner />
+      <Promotion />
     </Container>
     </ThemeProvider>
   );

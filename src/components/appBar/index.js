@@ -10,7 +10,7 @@ const AppBar = () => {
     <>
 
    
-    {match ? <AppBarMobile /> : <AppBarDesktop /> }
+    {match ? <AppBarMobile match={match} /> : <AppBarDesktop match ={match} /> }
     </>
   )
 }
